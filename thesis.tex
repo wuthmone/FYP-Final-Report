@@ -1,0 +1,67 @@
+\documentclass{thesis}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage[super]{nth}
+
+
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+
+\author{Wut Hmone Hnin Hlaing}
+\title{Exchange Rate Forecasting using Ensemble Artificial Neural Network Model}
+\submissionyear{2017}
+\submissionmonth{March}
+\degree{BACHELOR OF COMPUTER SCIENCE}
+\major{B.C.S (HONS) INFORMATION SYSTEM}
+\session{Session 2016/2017}
+\loadglsentries{myacronyms}
+
+\begin{document}
+\frontmatter
+\makecoverandtitlepage
+\copyrightpage
+\declarationpage
+\doublespacing
+\acknowledgements{
+I would like to express my sincere thanks to my supervisor, Dr. Kannan Ramakrishnan, for his guidance, unconditional supports and encouragement. He has spent considerable amount of time with me for discussions on this project. His guidance, supports, patience, encouragement, constructive suggestions have helped me in a great way to complete this project. I would like to also thank my family for their  supports in every aspect of my life.}
+\newpage
+\doublespacing
+\abstractfromfile{sample-abstract}
+
+{\clearpage\SingleSpacing
+\tableofcontents\clearpage
+\listoftables\clearpage
+\listoffigures\clearpage}
+
+
+
+\mainmatter
+\doublespacing
+\include{chap-intro}
+\include{chap-lite}
+\include{chap-theo}
+\include{chap-des}
+\include{chap-imple-simu}
+\include{chap-test}
+\include{chap-concl}
+
+
+\backmatter
+\bibliography{references}
+\printglossaries
+{\SingleSpacing\printindex}
+\bibliographyown{references}
+
+\appendix
+\include{appendix}
+
+\end{document}
